@@ -19,3 +19,40 @@ debtinc: Debt to income ratio
 creddebt: Credit to Debt ratio
 othdebt: Other debts
 default: Customer defaulted in the past (1= defaulted, 0=Never defaulted)
+
+Objective
+
+To Predct whether the customer is defaulter or not
+
+## Important insights
+### Default
+
+<img src="https://github.com/sasikirankaye/Credit-Risk-Analysis/blob/main/Images/default.png">
+The default class is indicated by 1 and non-default class is indicated by 0
+
+### Whisker_plots
+
+<img src="https://github.com/sasikirankaye/Credit-Risk-Analysis/blob/main/Images/whiskerplot.png">
+1. Age- It depicts that the customers with lower age group tends to default more than higher age group
+2. Creddebt - It depicts that customers having higher creddebt tends to default more 
+3. Debtinc - People with higher debt ratio tends to default more  often
+4. employ - People with recently employed tends to default more than senior people
+
+### Distribution_plots
+
+<img src=https://github.com/sasikirankaye/Credit-Risk-Analysis/blob/main/Images/distribution_plot.png">
+Above density graphs depicts that the otherdebts,credebts,ed doesnt have any considerable impact on the customer default situation in respect to the other variables
+
+### Correlation
+
+<img src="https://github.com/sasikirankaye/Credit-Risk-Analysis/blob/main/Images/correlation.png">
+The above plot depicts that there is a strong correlation between default ~ debtinc,employ,creddebt
+
+# Predictive Modelling results
+In order to find a decent model to predict sales we performed an extensive search of various machine learning models available in Python. In the end, however, models from the sklearn package yielded the best results for this task. In particular Logistic regression(Statistical approcah).
+
+# model_id	& AUC_Score  
+
+### LogisticRegression	0.731 
+
+
